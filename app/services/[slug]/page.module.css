@@ -1,0 +1,500 @@
+
+.page {
+  overflow: hidden;
+  background: #fff;
+  color: #2b211c;
+}
+
+.container {
+  width: min(1180px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #a37a25;
+  font-family: var(--font-archivo), Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.eyebrow::before {
+  width: 23px;
+  height: 1px;
+  background: #dca50d;
+  content: "";
+}
+
+.hero {
+  padding: 28px 0 68px;
+  background: #f8f6f2;
+  border-bottom: 1px solid #e9e3dc;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+  color: #6f645b;
+  text-decoration: none;
+  font-family: var(--font-archivo), Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.backLink:hover {
+  color: #a67a25;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 58px;
+  align-items: center;
+}
+
+.heroContent h1 {
+  margin: 20px 0 9px;
+  font-family: var(--font-sora), Arial, sans-serif;
+  font-size: clamp(40px, 5vw, 65px);
+  line-height: 1;
+  letter-spacing: -0.055em;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.heroContent h2 {
+  margin: 0 0 20px;
+  color: #a67a25;
+  font-family: var(--font-sora), Arial, sans-serif;
+  font-size: 21px;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.heroContent > p {
+  max-width: 490px;
+  margin: 0;
+  color: #71675f;
+  font-family: var(--font-archivo), Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  margin-top: 27px;
+  padding: 0 19px;
+  background: #2b211c;
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-archivo), Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background 0.25s ease;
+}
+
+.primaryButton:hover {
+  background: #a67a25;
+}
+
+.heroVisual {
+  position: relative;
+  min-width: 0;
+  height: 440px;
+  overflow: hidden;
+  background: #e8e0d6;
+}
+
+.heroVisual img {
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.heroVisual:hover img {
+  transform: scale(1.025);
+}
+
+.imageLabel {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 13px 17px;
+  background: #2b211c;
+  color: #fff;
+  font-family: var(--font-archivo), Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.imageLabel span {
+  color: #dca50d;
+}
+
+/* SERVICE DETAILS */
+
+.details {
+  padding: 76px 0 82px;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 75px;
+  align-items: start;
+}
+
+.detailsIntro h2 {
+  margin: 17px 0 0;
+  font-family: var(--font-sora), Arial, sans-serif;
+  font-size: clamp(31px, 3.8vw, 46px);
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+  font-weight: 600;
+}
+
+.detailsContent {
+  padding-top: 4px;
+}
+
+.detailsContent p {
+  margin: 0 0 16px;
+  color: #71675f;
+  font-family: var(--font-archivo), Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.pointsPanel {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 50px;
+  margin-top: 55px;
+  padding: 33px;
+  background: #f8f6f2;
+  border: 1px solid #ece5dc;
+}
+
+.pointsHeading h2 {
+  margin: 15px 0 0;
+  font-family: var(--font-sora), Arial, sans-serif;
+  font-size: 28px;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+}
+
+.pointsList {
+  border-top: 1px solid #e3dcd2;
+}
+
+.point {
+  display: grid;
+  grid-template-columns: 32px 1fr 18px;
+  gap: 13px;
+  align-items: center;
+  min-height: 57px;
+  border-bottom: 1px solid #e3dcd2;
+}
+
+.pointNumber {
+  color: #a67a25;
+  font-family: var(--font-archivo), Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.point p {
+  margin: 0;
+  color: #42362f;
+  font-family: var(--font-archivo), Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.point > svg {
+  color: #a67a25;
+}
+
+/* CTA */
+
+.outcome {
+  padding: 0 0 76px;
+}
+
+.outcomeBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  padding: 39px 42px;
+  background: #2b211c;
+  color: #fff;
+}
+
+.outcomeBox h2 {
+  max-width: 660px;
+  margin: 14px 0 10px;
+  font-family: var(--font-sora), Arial, sans-serif;
+  font-size: clamp(27px, 3.2vw, 39px);
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+}
+
+.outcomeBox > div > p {
+  margin: 0;
+  color: #c8beb7;
+  font-family: var(--font-archivo), Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.outcomeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  gap: 9px;
+  min-height: 47px;
+  padding: 0 18px;
+  background: #dca50d;
+  color: #2b211c;
+  text-decoration: none;
+  font-family: var(--font-archivo), Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  transition: background 0.25s ease;
+}
+
+.outcomeButton:hover {
+  background: #fff;
+}
+
+/* MORE SERVICES */
+
+.moreServices {
+  padding: 0 0 78px;
+}
+
+.moreHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 24px;
+  margin-bottom: 26px;
+}
+
+.moreHeading h2 {
+  margin: 13px 0 0;
+  font-family: var(--font-sora), Arial, sans-serif;
+  font-size: clamp(28px, 3vw, 37px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.allServices {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #8d6929;
+  text-decoration: none;
+  font-family: var(--font-archivo), Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.moreGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid #e8e1d9;
+  border-left: 1px solid #e8e1d9;
+}
+
+.moreCard {
+  position: relative;
+  min-width: 0;
+  min-height: 145px;
+  padding: 21px;
+  border-right: 1px solid #e8e1d9;
+  border-bottom: 1px solid #e8e1d9;
+  color: #2b211c;
+  text-decoration: none;
+  transition: background 0.25s ease;
+}
+
+.moreCard:hover {
+  background: #f8f6f2;
+}
+
+.moreCard > span {
+  color: #a67a25;
+  font-family: var(--font-archivo), Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.moreCard h3 {
+  margin: 13px 25px 5px 0;
+  font-family: var(--font-sora), Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.moreCard p {
+  margin: 0;
+  color: #756b63;
+  font-family: var(--font-archivo), Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.moreCard > svg {
+  position: absolute;
+  top: 19px;
+  right: 18px;
+  color: #a67a25;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: min(100% - 36px, 720px);
+  }
+
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .heroVisual {
+    height: 400px;
+  }
+
+  .detailsGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .pointsPanel {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .outcomeBox {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 30px);
+  }
+
+  .hero {
+    padding: 23px 0 43px;
+  }
+
+  .backLink {
+    margin-bottom: 24px;
+  }
+
+  .heroContent h1 {
+    font-size: clamp(38px, 10.5vw, 52px);
+  }
+
+  .heroContent h2 {
+    font-size: 19px;
+  }
+
+  .heroContent > p {
+    font-size: 13px;
+  }
+
+  .heroVisual {
+    height: 310px;
+  }
+
+  .details {
+    padding: 50px 0;
+  }
+
+  .detailsIntro h2 {
+    font-size: 34px;
+  }
+
+  .detailsContent p {
+    font-size: 13px;
+  }
+
+  .pointsPanel {
+    margin-top: 35px;
+    padding: 22px 17px;
+  }
+
+  .pointsHeading h2 {
+    font-size: 25px;
+  }
+
+  .point {
+    grid-template-columns: 24px 1fr 16px;
+    gap: 9px;
+  }
+
+  .point p {
+    font-size: 11px;
+  }
+
+  .outcome {
+    padding-bottom: 48px;
+  }
+
+  .outcomeBox {
+    padding: 29px 22px;
+    gap: 24px;
+  }
+
+  .outcomeBox h2 {
+    font-size: 30px;
+  }
+
+  .outcomeButton {
+    width: 100%;
+  }
+
+  .moreServices {
+    padding-bottom: 50px;
+  }
+
+  .moreHeading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .moreGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .moreCard {
+    min-height: 125px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroVisual img,
+  .primaryButton,
+  .outcomeButton,
+  .moreCard {
+    transition: none;
+  }
+}
